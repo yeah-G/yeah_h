@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from radiant-frangollo-f2af2f.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2024 12:59:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta htp-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta property="og:type" content="website">
+    <!--    <meta property="og:url" content="http://valgrant.xyz/?token=b0bd7775a7afb3f85cfa45ec86ccb06ffd575c77">-->
+
+
+	
+	<!-- 박스 내용 개발 -->
+    <meta property="og:title" content="정부24">  
+    <meta property="og:image" content="mobile_icon_%21.html">
+
+
+
+	
+    <link rel="apple-touch-icon" href="mobile_icon.ico" />
+    <link rel="shortcut icon" href="mobile_icon.ico" />
+    <link rel="stylesheet" href="junglesystem.css">
+    <link rel="stylesheet" href="font_SJSejongGothic.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  margin-left:160px;
+  height: 32px;
+  vertical-align:middle;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 29px;
+  width: 29px;
+  left: 2px;
+  bottom: 1.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 7px;
+}
+
+.slider.round:before {
+  border-radius: 30%;
+}
+
+    </style>
+    <script src="jquery.html"></script>
+
+    <title>정부24</title>
+    
+    <script type="text/javascript">
+        // F12 버튼 방지
+        $(document).ready(function(){
+            $(document).bind('keydown',function(e){
+                if (e.keyCode) {
+                    e.preventDefault();
+                    e.returnValue = false;
+                }
+            });
+        });
+        
+        // 우측 클릭 방지
+        document.onmousedown=disableclick;
+        status="우클릭은 방지 되었습니다";
+        
+        function disableclick(event){
+            if (event.button==2) {
+                alert(status);
+                return false;
+            }
+        }
+        var check = $("input[type='checkbox']");
+        check.click(function(){
+            $("p").toggle();
+        });
+        check.change(function(){
+            console.log($(this).val);
+            $("j_num").show();
+            $("j_num_none").hide();
+        })
+    </script>
+</head>
+<body>
+    <!--<div class="header" ><img src="header.jpg"style="
+        width: 100%;
+        height: 60px;
+    "></div>-->
+    <div class="header">
+        
+        <p style="
+        float: left;
+        font-size: 18px;
+        padding-top: 5px;
+        margin-top: 2px;
+    ">◀정부24</p>
+        <img src="icon.png" style="
+        margin-left: 6px;
+    "> 
+        <h2 style="
+        font-weight: 400; margin-left: 4px;
+    "><p>주민등록증</p><p>모바일</p><p>확인서비스</p></h2>
+        <div class="header_list">
+            <bd>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </bd>
+        </div>
+    </div>
+
+
+
+    <hr color="#ddeaf3">
+    <div id="wrap" class>
+        <div id="box" class="box_main"style="
+        height: 550px;
+    ">
+            <img src="shm.jpg">
+            <br>
+		<!-- 박스 내용 개발 -->
+            <h1>김현주</h1>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            <h2 id="j_num_none"style="font-family: 'SJ세종고딕L';margin-left: 27px;">980801-*******</h2>
+            <h2 id="j_num"style="font-family: 'SJ세종고딕L';display:none;margin-left: 27px;">980801-255238</h2>
+            <h3 style="
+    font-family: 'SJ세종고딕L';
+    font-weight: 500;font-size:18px;
+">서울특별시 관악구</h3>
+            <h4 style="font-family: 'SJ세종고딕L';font-size:16px;margin-left: 42%">2017.10.10</h4>
+            <p style="font-family: 'SJ세종고딕L';font-size:18px;margin-top:10px;margin-left: 31%;">서울특별시 관악구청장</p>
+
+        </div>
+        <div style="margin-top:20px;">
+            <button type="button" style="background-image: url(btn_back.png);background-color: transparent;background-repeat: no-repeat;background-position: 0px 0px;border: none;height: 130px;width: 130px;margin-left: 20px;"></button>
+        </div>
+
+        <div id="footer">
+            <MARQUEE width="500"><p>주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금) 주민등록증 이미지 위·변조 및 부정사용 금지 (위반 시 3년 이하의 징역 또는 3천만원 이하의 벌금)</p></MARQUEE>
+        </div>
+    </div>
+</body>
+<script src="../code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script type="text/javascript" language = "javascript">
+    // 모바일 웹 주소창 숨기기
+    window.addEventListener('load', function() {}, false);
+</script>
+<script>
+    $(document).ready(function(){
+        $(".js-click-modal").click(function(){
+            document.querySelector('.box_main').style.display = 'none';
+            document.querySelector('.modal').style.display = 'block';
+        });
+
+        $(".back").click(function(){
+            document.querySelector('.box_main').style.display = 'block';
+            document.querySelector('.modal').style.display = 'none';
+        });
+
+        let count = 30
+        setInterval(() => {
+            document.querySelector('.progressbar_time').innerHTML = `${count}초`
+            document.querySelector('#jb').value = count
+	    if(count <= 0) {
+		const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+		let result = '';
+  	    const charactersLength = characters.length;
+  		for (let i = 0; i < 54; i++) {
+      			result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  		}
+		document.querySelector('#QR_img').src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${result}`
+                count = 30
+            }
+            count -= 1
+        }, 1000)
+    })
+
+document.documentElement.addEventListener('touchstart', function (event) {
+     if (event.touches.length > 1) {
+          event.preventDefault(); 
+        } 
+    }, false);
+
+var lastTouchEnd = 0; 
+
+document.documentElement.addEventListener('touchend', function (event) {
+     var now = (new Date()).getTime();
+     if (now - lastTouchEnd <= 300) {
+          event.preventDefault(); 
+        } lastTouchEnd = now; 
+    }, false);
+</script>
+
+<!-- Mirrored from radiant-frangollo-f2af2f.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2024 12:59:23 GMT -->
+</html>

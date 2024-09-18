@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'SJ세종고딕B';
+    font-style: normal;
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html);
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95Bd41d.html?#iefix) format("embedded-opentype"), url(font/woff2/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html) format("woff2"), url(font/woff/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html) format("woff"), url(font/ttf/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html) format("truetype");
+  }
+  @font-face {
+    font-family: 'SJ세종고딕EB';
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95EB.html);
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95EBd41d.html?#iefix) format("embedded-opentype"), url(font/woff2/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95EB.html) format("woff2"), url(font/woff/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95EB.html) format("woff"), url(font/ttf/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95EB.html) format("truetype");
+  }
+  @font-face {
+    font-family: 'SJ세종고딕L';
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95L.html);
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95Ld41d.html?#iefix) format("embedded-opentype"), url(font/woff2/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95L.html) format("woff2"), url(font/woff/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95L.html) format("woff"), url(font/ttf/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95L.html) format("truetype");
+  }
+  @font-face {
+    font-family: 'SJ세종고딕R';
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95R.html);
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95Rd41d.html?#iefix) format("embedded-opentype"), url(font/woff2/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95R.html) format("woff2"), url(font/woff/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95R.html) format("woff"), url(font/ttf/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95R.html) format("truetype");
+  }
+  @font-face {
+    font-family: 'SJ세종고딕B';
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html);
+    src: url(font/eot/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95Bd41d.html?#iefix) format("embedded-opentype"), url(font/woff2/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html) format("woff2"), url(font/woff/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html) format("woff"), url(font/ttf/SJ%ec%84%b8%ec%a2%85%ea%b3%a0%eb%94%95B.html) format("truetype");
+  }
+  
+  /*# sourceMappingURL=font_SJSejongGothic.css.map */
+  
