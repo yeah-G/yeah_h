@@ -92,21 +92,15 @@ input:checked + .slider:before {
 }
 
     </style>
-    <script src="jquery.html"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
 
     <title>정부24</title>
     
     <script type="text/javascript">
         // F12 버튼 방지
         $(document).ready(function(){
-            $(document).bind('keydown',function(e){
-                if (e.keyCode) {
-                    e.preventDefault();
-                    e.returnValue = false;
-                }
-            });
-        });
-        
+            
         // 우측 클릭 방지
         document.onmousedown=disableclick;
         status="우클릭은 방지 되었습니다";
@@ -118,14 +112,17 @@ input:checked + .slider:before {
             }
         }
         var check = $("input[type='checkbox']");
-        check.click(function(){
-            $("p").toggle();
-        });
         check.change(function(){
-            console.log($(this).val);
-            $("j_num").show();
-            $("j_num_none").hide();
+            console.log('@@@@@@@@@'+$("#j_num").css("display"));
+            if($("#j_num").css("display")=='none'){
+                $("#j_num").show();
+                $("#j_num_none").hide();
+            }else{
+                $("#j_num").hide();
+                $("#j_num_none").show();
+            }
         })
+        });
     </script>
 </head>
 <body>
